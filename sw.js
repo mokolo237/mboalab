@@ -1,33 +1,14 @@
 // Service worker : met toute l'application en cache pour un usage hors ligne.
 // Changez VERSION à chaque mise à jour pour que les utilisateurs reçoivent la nouvelle version.
-const VERSION = 'mboalab-v0.2.0';
+const VERSION = 'mboalab-v0.2.1-simple';
 
 const FILES = [
   './',
   './index.html',
   './manifest.webmanifest',
-  './css/app.css',
-  './icons/icon.svg',
-  './icons/icon-192.png',
-  './icons/icon-512.png',
-  './js/app.js',
-  './js/store.js',
-  './js/ui.js',
-  './js/icons.js',
-  './js/router.js',
-  './js/lib/ipcalc.js',
-  './js/lib/netplan.js',
-  './js/lib/roadmap.js',
-  './js/lib/search.js',
-  './js/lib/sqlgen.js',
-  './js/modules/home.js',
-  './js/modules/ip.js',
-  './js/modules/network.js',
-  './js/modules/webproject.js',
-  './js/modules/library.js',
-  './js/modules/paths.js',
-  './js/modules/settings.js',
-  './data/knowledge.js',
+  './icon.svg',
+  './icon-192.png',
+  './icon-512.png',
 ];
 
 self.addEventListener('install', (event) => {
